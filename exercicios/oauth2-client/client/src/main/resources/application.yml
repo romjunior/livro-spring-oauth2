@@ -1,0 +1,21 @@
+server:
+  port: 9000
+
+spring:
+  http.converters.preferred-json-mapper: jackson
+  thymeleaf:
+    cache: false
+  datasource:
+    url: jdbc:postgresql://192.168.1.180:30010/clientapp
+    username: clientapp
+    password: 123
+    driver-class-name: org.postgresql.Driver
+    tomcat:
+      max-active: 3
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        show_sql: true
+        hbm2ddl:
+          auto: validate

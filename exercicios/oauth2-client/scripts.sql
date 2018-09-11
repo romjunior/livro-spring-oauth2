@@ -1,0 +1,1 @@
+ALTER TABLE usuario ADD COLUMN expiracao_token TIMESTAMP;
